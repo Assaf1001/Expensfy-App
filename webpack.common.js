@@ -1,11 +1,10 @@
-const path = require("path");
-const publicFolderPath = path.join(__dirname, "public");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require("path");
 
 module.exports = {
     entry: "./src/app.jsx",
     output: {
-        path: publicFolderPath,
+        path: path.join(__dirname, "public", "dist"),
         filename: "bundle.js",
     },
     plugins: [new MiniCssExtractPlugin()],
