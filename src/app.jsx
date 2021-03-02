@@ -7,6 +7,7 @@ import "react-dates/lib/css/_datepicker.css";
 
 import AppRouter from "./routers/AppRouter.jsx";
 import configureStore from "./store/configureStore";
+import "./firebase/firebase.js";
 
 const store = configureStore();
 
